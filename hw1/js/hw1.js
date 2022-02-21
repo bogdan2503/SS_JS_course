@@ -43,7 +43,7 @@
 // alert ("Dear" + " " + login + ", " + "your email is" + " " + email + ", " + "your passwor is " + password);
 
 // task 8
-let hours = (60*60);
-let day = (24*60*60);
-let month = (30*24*60*60);
-alert ("Seconds in hour " + hours + ", seconds in day " + day + ", seconds in month " + month +".");
+// let hours = (60*60);
+// let day = (24*60*60);
+// let month = (30*24*60*60);
+// alert ("Seconds in hour " + hours + ", seconds in day " + day + ", seconds in month " + month +".");
