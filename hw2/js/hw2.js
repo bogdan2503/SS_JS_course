@@ -77,34 +77,59 @@
 // }
 
 // мені не вдалося зробити цю задачу через switch case
-// спочатку без перетворення значення отриманого з prompt
-// з string в number взагалі не запускалася звірка з case
-// після перетворення відбувається перевірка тільки не строгу
-// рівність num і case. Коли пробую в case написати num>18 або
-// просто >18 то взагалі не спрацьовує case.
-// Тобто чи правильно я зрозумів що умова з switch звіряється 
-// з варіантами в case виключно на строгу рівність
-
 
 // +++++++++++++++++++++++++ task 6 +++++++++++++++++++++++++
 
-let x = Number (prompt ("сторона x"));
-let y = Number (prompt ("сторона y"));
-let z = Number (prompt ("сторона z"));
+// let x = Number (prompt ("сторона x"));
+// let y = Number (prompt ("сторона y"));
+// let z = Number (prompt ("сторона z"));
 
-if (x > 0 && y > 0 && z > 0) {
-    let areaTriangle = Math.sqrt(((x + y + z)/2)*(((x + y + z)/2)-x)*(((x + y + z)/2)-y)*(((x + y + z)/2)-z))
-console.log (areaTriangle.toFixed(3))
-} else {
-    console.log ("Incorrect data")
-}
+// if (x > 0 && y > 0 && z > 0) {
+//    let areaTriangle = Math.sqrt(((x + y + z)/2)*(((x + y + z)/2)-x)*(((x + y + z)/2)-y)*(((x + y + z)/2)-z))
+//         console.log (areaTriangle.toFixed(3))
+// } else {
+//         console.log ("Incorrect data")
+//     }
+
+// if (Math.pow (x, 2) + Math.pow (y, 2) === Math.pow (z, 2) ||
+//     Math.pow (z, 2) + Math.pow (y, 2) === Math.pow (x, 2) ||
+//     Math.pow (z, 2) + Math.pow (x, 2) === Math.pow (y, 2)
+// ) {
+//          console.log ("Трикутник прямокутний")
+// } else {
+//          console.log ("Трикутник не прямокутний")
+// }
 
 
-if (Math.pow (x, 2) + Math.pow (y, 2) === Math.pow (z, 2) ||
-    Math.pow (z, 2) + Math.pow (y, 2) === Math.pow (x, 2) ||
-    Math.pow (z, 2) + Math.pow (x, 2) === Math.pow (y, 2)
-) {
-    console.log ("Трикутник прямокутний")
-} else {
-    console.log ("Трикутник не прямокутний")
-}
+// +++++++++++++++++++++++++ task 7 +++++++++++++++++++++++++
+
+//  way 1
+
+// let hours = new Date().getHours()
+// console.log (hours)
+// if (hours >= 5 && hours < 11) {
+//     console.log ("Доброго ранку");
+// } else if (hours >= 11 && hours < 17) {
+//     console.log ("Доброго дня");
+// } else if (hours >= 17 && hours <= 23) {
+//     console.log ("Доброго вечора");
+// } else {
+//     console.log ("Доброї ночі");
+// }
+
+// way 2
+
+// let hours = new Date().getHours()
+// switch (true) {
+//     case hours >= 5 && hours < 11:
+//         console.log ("Доброго ранку");
+//         break;
+//     case hours >= 11 && hours < 17:
+//         console.log ("Доброго дня");
+//         break;
+//      case hours >= 17 && hours <= 23:
+//         console.log ("Доброго вечора");
+//         break;
+//     default: console.log ("Доброї ночі");
+//         break;
+// }
