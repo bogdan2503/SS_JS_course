@@ -119,17 +119,17 @@
 
 // way 2
 
-// let hours = new Date().getHours()
-// switch (true) {
-//     case hours >= 5 && hours < 11:
-//         console.log ("Доброго ранку");
-//         break;
-//     case hours >= 11 && hours < 17:
-//         console.log ("Доброго дня");
-//         break;
-//      case hours >= 17 && hours <= 23:
-//         console.log ("Доброго вечора");
-//         break;
-//     default: console.log ("Доброї ночі");
-//         break;
-// }
+let hours = new Date().getHours()
+switch (true) {
+    case hours >= 5 && hours < 11:
+        console.log ("Доброго ранку");
+        break;
+    case hours >= 11 && hours < 17:
+        console.log ("Доброго дня");
+        break;
+     case hours >= 17 && hours <= 23:
+        console.log ("Доброго вечора");
+        break;
+    default: console.log ("Доброї ночі");
+        break;
+}
