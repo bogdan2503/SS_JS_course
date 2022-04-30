@@ -1,0 +1,48 @@
+.container {
+    background-size: auto;
+    background-color: aqua;
+}
+
+#chooseList {
+    float: left;
+}
+
+#listName {
+    float: right;
+}
+
+#h1 {
+    margin-left: 40%;
+    margin-top: 50px;
+}
+#itemName {
+    margin-left: 35%;
+    margin-top: 10px;
+}
+
+#out {
+    margin-left: 35%;
+}
+
+.button {
+    background-color: red;
+    font-size: 13px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+#items, #list {
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: yellow;
+}
+
+select {
+    border-radius: 8px;
+    background-color: plum;
+}
+
+p {
+    font: 1em sans-serif;
+    font-weight: bold;
+}

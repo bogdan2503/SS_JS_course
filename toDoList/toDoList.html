@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="toDoList.css" rel="stylesheet">
+    </head>
+    <body>
+<div class="container">
+    
+        
+    <p id="p">Choose List</p>   
+    <select name="Choose List" id="chooseList"> </select> 
+
+    <div id="listName">
+        <input type="text" placeholder="List Name" id="list" value>
+        <input type="button" value="Add List" id="buttonList" class="button">
+    </div>
+    <h1 id="h1"></h1>
+
+
+    <div id="itemName">
+        <input type="text" placeholder="To do Items" id="items">
+        <input type="button" value="Add Items" id="buttonItems" class="button">
+    </div>
+
+<ul id="out"> </ul>
+
+<input type="button" value="Clear all list and items" id="clear" class="button">
+
+</div>
+<script src="toDoList.js"></script>
+</body>
+</html>
