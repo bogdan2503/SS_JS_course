@@ -160,77 +160,77 @@
 
 // ++++++++++++++++++++ task 5 ++++++++++++++++++++
 
-// let figures = []
+let figures = []
 
-// class GeometricFigure {
-//     getArea() {
-//         return 0;
-//     }
-//     toString() {
-//         return Object.getPrototypeOf(this).constructor.name;
-//     }
-// }
+class GeometricFigure {
+    getArea() {
+        return 0;
+    }
+    toString() {
+        return Object.getPrototypeOf(this).constructor.name;
+    }
+}
 
-// class Triangle extends GeometricFigure {
-//     constructor (width, height) {
-//         super ();
-//         this.width = width;
-//         this.height = height;
-//         this.area = 0;
-//         figures.push (this);
-//     }
-//     getArea () {
-//         this.area = this.width / 2 * this.height;
-//         return this.width / 2 * this.height;
-//     }
-// }
-// let tria = new Triangle (2, 3)
-// tria.getArea ()
+class Triangle extends GeometricFigure {
+    constructor (width, height) {
+        super ();
+        this.width = width;
+        this.height = height;
+        this.area = 0;
+        figures.push (this);
+    }
+    getArea () {
+        this.area = this.width / 2 * this.height;
+        return this.width / 2 * this.height;
+    }
+}
+let tria = new Triangle (2, 3)
+tria.getArea ()
 
-// class Square extends GeometricFigure {
-//     constructor (side) {
-//         super ();
-//         this.side = side;
-//         this.area = 0;
-//         figures.push (this);
-//     }
-//     getArea () {
-//         this.area = Math.pow (this.side, 2);
-//         return Math.pow (this.side, 2);
-//     }
-// }
-// let squa = new Square (2)
-// squa.getArea ()
+class Square extends GeometricFigure {
+    constructor (side) {
+        super ();
+        this.side = side;
+        this.area = 0;
+        figures.push (this);
+    }
+    getArea () {
+        this.area = Math.pow (this.side, 2);
+        return Math.pow (this.side, 2);
+    }
+}
+let squa = new Square (2)
+squa.getArea ()
 
-// class Circle extends GeometricFigure {
-//     constructor (radius) {
-//         super ();
-//         this.radius = radius;
-//         this.area = 0;
-//         figures.push (this);
-//     }
-//     getArea () {
-//         this.area =3.14 * Math.pow (this.radius, 2);
-//         return 3.14 * Math.pow (this.radius, 2);
-//     }
-// }
-// let circ = new Circle (2)
-// circ.getArea ()
+class Circle extends GeometricFigure {
+    constructor (radius) {
+        super ();
+        this.radius = radius;
+        this.area = 0;
+        figures.push (this);
+    }
+    getArea () {
+        this.area =3.14 * Math.pow (this.radius, 2);
+        return 3.14 * Math.pow (this.radius, 2);
+    }
+}
+let circ = new Circle (2)
+circ.getArea ()
 
-// function handleFigures(figures) {
-//     let x = tria instanceof GeometricFigure;
-//     let y = squa instanceof GeometricFigure;
-//     let z = circ instanceof GeometricFigure
-//     console.log ("tria extends GeometricFigure: " + x);
-//     console.log ("squa extends GeometricFigure: " + y);
-//     console.log ("circ extends GeometricFigure: " + z);
-//     console.log ("Geometric figure: " + figures[0] + " - area: " + figures[0].area);
-//     console.log ("Geometric figure: " + figures[1] + " - area: " + figures[1].area);
-//     console.log ("Geometric figure: " + figures[2] + " - area: " + figures[2].area);
+function handleFigures(figures) {
+    let x = tria instanceof GeometricFigure;
+    let y = squa instanceof GeometricFigure;
+    let z = circ instanceof GeometricFigure
+    console.log ("tria extends GeometricFigure: " + x);
+    console.log ("squa extends GeometricFigure: " + y);
+    console.log ("circ extends GeometricFigure: " + z);
+    console.log ("Geometric figure: " + figures[0] + " - area: " + figures[0].area);
+    console.log ("Geometric figure: " + figures[1] + " - area: " + figures[1].area);
+    console.log ("Geometric figure: " + figures[2] + " - area: " + figures[2].area);
 
-//     let arr = [figures[0].area, figures[1].area, figures[2].area]
-//     let sum = arr.reduce ((total, amount)=>total+amount);
-//     return sum
+    let arr = [figures[0].area, figures[1].area, figures[2].area]
+    let sum = arr.reduce ((total, amount)=>total+amount);
+    return sum
 
-// }
-// handleFigures(figures)
+}
+handleFigures(figures)
